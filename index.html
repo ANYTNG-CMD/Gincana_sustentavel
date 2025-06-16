@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gincana Sustentável – Reciclar é Divertido!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gincana Sustentável</h1>
+        <p>Jogo de Gerenciamento de Resíduos para Promover a Conscientização Ambiental</p>
+    </header>
+
+    <div class="container">
+        <div class="game-panel">
+            <h2>Classifique os Resíduos</h2>
+            <p>Arraste cada item para a lixeira correta ou clique para selecionar</p>
+            
+            <div class="waste-categories">
+                <div class="category paper" data-category="paper">
+                    <h3>Papel</h3>
+                    <p>Reciclável</p>
+                </div>
+                <div class="category plastic" data-category="plastic">
+                    <h3>Plástico</h3>
+                    <p>Reciclável</p>
+                </div>
+                <div class="category glass" data-category="glass">
+                    <h3>Vidro</h3>
+                    <p>Reciclável</p>
+                </div>
+                <div class="category metal" data-category="metal">
+                    <h3>Metal</h3>
+                    <p>Reciclável</p>
+                </div>
+                <div class="category organic" data-category="organic">
+                    <h3>Orgânico</h3>
+                    <p>Compostagem</p>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="score-board">
+                <div>
+                    <h3>Pontuação</h3>
+                    <div class="score" id="score">0</div>
+                </div>
+                <div>
+                    <h3>Nível</h3>
+                    <div class="score" id="level">1</div>
+                </div>
+                <div>
+                    <h3>Acertos</h3>
+                    <div class="score" id="correct">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-panel leaderboard">
+            <h2>Ranking da Gincana</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Jogador</th>
+                        <th>Pontuação</th>
+                        <th>Nível</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard">
+                    <!-- Dados serão preenchidos por JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <button id="infoButton">Sobre o Jogo</button>
+    </div>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sobre a Gincana Sustentável</h2>
+            <p>Este jogo tem como objetivo conscientizar sobre a importância da reciclagem e do gerenciamento correto de resíduos.</p>
+            <p>Classifique os itens nas categorias corretas para ganhar pontos e subir de nível.</p>
+            <h3>Benefícios da Reciclagem:</h3>
+            <ul>
+                <li>Reduz a poluição do solo, água e ar</li>
+                <li>Economiza recursos naturais</li>
+                <li>Diminui o volume de lixo em aterros</li>
+                <li>Gera empregos na indústria da reciclagem</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
